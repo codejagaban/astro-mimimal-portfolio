@@ -1,0 +1,50 @@
+[
+  {
+    "title": "TypeScript utility types: when and how to use them",
+    "description": "Learn about utility types in TypeScript, when and how to use them, and how you can combine them with custom types..",
+    "link": "https://blog.apify.com/typescript-utility-types/",
+    "date": "Nov 3, 2023"
+  },
+  {
+    "title": "Serverless web scraping with TypeScript and AWS Lambda",
+    "description": "Learn how to perform web scraping on any website using AWS Lambda services and deploy your scrapers to AWS.",
+    "link": "https://blog.apify.com/web-scraping-with-typescript-and-aws-lambda/",
+    "date": "Sep 13, 2023"
+  },
+  {
+    "title": "Improving Your Workflow as a Developer with Bash Aliases",
+    "description": "This article explores what bash aliases are and how you can use them to enhance your development process.",
+    "link": "https://blog.jamiin.com/improving-your-workflow-as-a-developer-with-bash-aliases",
+    "date": "Aug 5, 2023"
+  },
+  {
+    "title": "Mastering Generics in Typescript",
+    "description": "Explore the fundamentals of generics, delve into some of its concepts, and learn with practical examples to become a better user of generics in TypeScript.",
+    "link": "https://blog.jamiin.com/mastering-generics-in-typescript",
+    "date": "Jul 14, 2023"
+  },
+  {
+    "title": "The Differences Between Type and Interface in Typescript",
+    "description": "This article explains the differences between types and interfaces, covering syntax, declaration, and implementation disparities. It provides insights into scenarios favoring each, including when to use 'type' for primitive types and when interfaces excel in extension and declaration merging",
+    "link": "https://blog.jamiin.com/the-differences-between-type-and-interface-in-typescript",
+    "date": "Jun 13, 2023"
+  },
+  {
+    "title": "How to Send Custom Emails from Netlify: A Step-by-Step Guide",
+    "description": "This article explains how to send custom emails from shared hosting while your site is hosted on Netlify.",
+    "link": "https://blog.jamiin.com/how-to-send-custom-emails-from-netlify-a-step-by-step-guide",
+    "date": "May 29, 2023"
+  },
+  {
+    "title": "Effectiveness of Developer Relations Programs: A Study of MongoDB, AWS, and Vercel",
+    "description": "In my #90DaysofDevRel challenge, I delved into MongoDB, AWS, and Vercel's developer relations. From MongoDB's community focus to AWS's global impact and Vercel's active engagement, each company prioritizes strong customer relationships.",
+    "link": "https://blog.jamiin.com/effectiveness-of-developer-relations-programs-a-study-of-mongodb-aws-and-vercel",
+    "date": "May 4, 2023"
+  },
+  {
+    "title": "How to Contribute to Community Leaders Cm-Tools Repository!",
+    "description": "Learn how to contribute to open-source as a community manager",
+    "link": "https://www.communityleads.africa/blog/how-to-contribute-to-community-leaders-cm-tools-repository",
+    "date": "Feb 5, 2023"
+  }
+]

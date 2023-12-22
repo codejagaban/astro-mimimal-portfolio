@@ -1,0 +1,82 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: "geist";
+  src: url("/fonts/geist_regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "geist medium";
+  src: url("/fonts/geist_medium.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  --background-color: #f8f8f8;
+  --foreground-color: #333;
+  --dark-foreground-color: #c9c9c9;
+  --dark-background-color: #121212;
+  font-family: "geist", sans-serif;
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  }
+
+  .fill {
+    fill: var(--foreground-color);
+  }
+  .stroke {
+    stroke: var(--foreground-color);
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: var(--dark-foreground-color);
+      background: var(--dark-background-color);
+    }
+    body a {
+      color: var(--dark-foreground-color);
+    }
+    .fill {
+      fill: var(--dark-foreground-color);;
+    }
+    .stroke {
+      stroke: var(--dark-foreground-color);;
+    }
+
+  }
+  h1, h2, h3 {
+    font-family: "geist medium", sans-serif;
+
+  }
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1.5px solid #A78BFA;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+p {
+  padding: 1rem 0;
+}

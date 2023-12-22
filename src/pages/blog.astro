@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../data/blog.json";
+---
+
+<Layout
+  title="Blogs posts and articles written by Trust Jamin"
+  description="Explore technical articles and blogpost crafted by Trust Jamin"
+  keywords="technology insights, programming articles, software development blog,web development, serverless technologies, community management, DevOps,developer perspectives,TypeScript and Nodejs, software engineering insights."
+  image="/blog.png"
+>
+  <section>
+    <div class="container">
+      <div class="content">
+        <h1>Articles by Jamin</h1>
+        {
+          data.map((post) => (
+            <a
+              class="post"
+              href={post.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2>{post.title} </h2>
+              <p>{post.description}</p>
+              <p class="small">{post.date}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .post {
+    display: block;
+    padding: 2rem;
+    margin: 1rem 0;
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.5s ease-out;
+  }
+  .post:hover {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px -22px rgba(0, 0, 0, 0.1);
+  }
+  @media (prefers-color-scheme: dark) {
+    .post:hover {
+      background: #2a2a2a;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+  .post {
+    padding: 2rem 0;
+  }
+  .post:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    .post:hover {
+    background-color: transparent;
+    }
+
+}
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  p {
+    padding: 0.2rem 0;
+    line-height: 1.8;
+  }
+  .small {
+    font-size: 1.4rem;
+  }
+</style>

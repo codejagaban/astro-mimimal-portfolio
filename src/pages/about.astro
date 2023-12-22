@@ -1,0 +1,177 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="About Me"
+  description="Trust Jamin is a software engineer who is devoted to making the web easily accessible for everyone. here you'll find some of his previous projects,technical articles, community management endeavors,involvments in open source projects and pieces of information about him."
+  keywords="code contributions,developer advocate, open source collaboration,technical Writing, community engagement,problem solver,software development,developer-communities, DevRel"
+  image="/home.png"
+>
+  <section>
+    <div class="container">
+      <div class="content">
+        <h1>About me</h1>
+        <p class="intro">
+          Hey 👋🏼, I'm Jamin a software engineer with over 5 years of experience in building products that runs on the web.
+        </p>
+        <p>Lately, you'll find me either writing a tutorial or documentation (sometimes it's about a bug/fix I encountered) that can help developers use modern tools to build cool applications 🙌🏼 </p>
+        <p>I believe constant learning and improvement are the catalysts of personal and professional growth, and they can empower an individual to adapt to change, overcome challenges, and unlock their full potential, so I'm always learning to become the finest version of myself.</p>
+        <p>
+          My career started in my local developer community, and so I'm a huge fan of building with developer communities. Oftentimes, you'll find me either leading a program or participating as one of the organizers to help create a good experience for developer-focused events.
+        </p>
+        <p>
+          <a
+            href="mailto:hellotsjamin@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >shoot me an email
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              ><path
+                d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+                fill="currentColor"></path></svg
+            >
+          </a>
+        </p>
+        <h2>Skills and technologies</h2>
+        <div class="grid">
+          <ul>
+            <li>Node.js</li>
+            <li>Next.js</li>
+            <li>Docker</li>
+            <li>AWS</li>
+            <li>Astro (this website was built with it)</li>
+            <li>React.js</li>
+            <li>JavaScript/ TypeScript</li>
+            <li>Solidity</li>
+
+          </ul>
+          <ul>
+            <li>GoLang</li>
+            <li>GraphQL</li>
+            <li>Databases (PostgreSQL, MySQL, MongoDB)</li>
+            <li>Content management systems (CMS)</li>
+            <li>Community building and management</li>
+            <li>Programs management and organization</li>
+            <li>API Documentation</li>
+            <li>Technial Writing</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Writing activities</h2>
+          <ul>
+            <li>
+              <a
+                href="https://blog.jamiin.com/"
+                target="_blank"
+                rel="noopener noreferrer">Personal Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://blog.apify.com/author/jamin/"
+                target="_blank"
+                rel="noopener noreferrer">Apify</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://plainenglish.io/author/trust-jamin"
+                target="_blank"
+                rel="noopener noreferrer">Plain English</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://docs.directus.io/blog/"
+                target="_blank"
+                rel="noopener noreferrer">Directus</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://blog.openreplay.com/authors/trust-jamin"
+                target="_blank"
+                rel="noopener noreferrer">Open Replay</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Community activities</h2>
+          <ul>
+            <li>
+              Head of Programs and Ecosystem <a
+                href="https://www.communityleads.africa/"
+                target="_blank"
+                rel="noopener noreferrer">Community Leads Africa</a
+              >
+            </li>
+            <li>
+              Program Manager <a
+                href="https://cmfest.africa/"
+                target="_blank"
+                rel="noopener noreferrer">CMFest Africa</a
+              >
+            </li>
+            <li>
+              Co-Lead <a
+                href="https://twitter.com/lagosguild"
+                target="_blank"
+                rel="noopener noreferrer">Polygon Guild Lagos</a
+              >
+            </li>
+            <li>
+              Community Manager <a
+                href="http://https://lu.ma/notion-lagos-1"
+                target="_blank"
+                rel="noopener noreferrer">Notion Lagos</a
+              >
+            </li>
+            <li>
+              Organizer <a
+                href="https://gdg.community.dev/gdg-sapele/"
+                target="_blank"
+                rel="noopener noreferrer">GDG Sapele</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  section {
+    padding-bottom: 30px;
+  }
+  div {
+    margin-bottom: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr auto;
+  }
+  @media screen and (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .grid li {
+    flex: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  ul {
+    margin-left: 30px;
+  }
+
+</style>
