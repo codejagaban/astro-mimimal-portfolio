@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import projects from "../data/projects.json";
+import Card from "../components/Card.astro";
 ---
 
 <Layout
@@ -13,21 +14,18 @@ import projects from "../data/projects.json";
     <div class="container">
       <div class="content">
         <h1>Some selected projects I've worked on previously</h1>
+
         {
           projects.map((project) => (
             <section id={project.section}>
               <h2>{project.section} </h2>
               {project.projects.map((project) => (
-                <a href={project.link} class="project">
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                  <div class="tech-container">
-                    {project.technologies.map((tech) => (
-                      <span class="tech">{tech}</span>
-                    )
-                    )}
-                  </div>
-                </a>
+                <Card
+                  href={project.link}
+                  title={project.name}
+                  description={project.description}
+                  tags={project.technologies}
+                />
               ))}
             </section>
           ))
@@ -36,70 +34,3 @@ import projects from "../data/projects.json";
     </div>
   </section>
 </Layout>
-
-<style>
-  .project {
-    display: block;
-    padding: 2rem;
-    margin: 0.5rem 0;
-    border: none;
-    background-color: transparent;
-    transition: background-color 0.5s ease-out;
-  }
-  .project:hover {
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 10px 15px -22px rgba(0, 0, 0, 0.1);
-  }
-
-  h2 {
-    font-size: 1.7rem;
-    font-weight: 500;
-  }
-  p {
-    padding: 0.3rem 0;
-    line-height: 1.8;
-  }
-  .tech-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .tech {
-    font-size: 1.3rem;
-    padding: 3px 10px;
-    background-color: #dfdfdf;
-    margin-right: 10px;
-    border-radius: 50px;
-    white-space: nowrap;
-    display: block;
-  }
-  @media (prefers-color-scheme: dark) {
-    .project:hover {
-      background: #2a2a2a;
-    }
-  }
-      /* Dark mode settings  */
-      @media screen and (max-width: 640px) {
-  .project {
-    padding: 2rem 0;
-  }
-  .project:hover {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-  }
-  @media (prefers-color-scheme: dark) {
-    .project:hover {
-    background-color: transparent;
-    }
-
-}
-  }
-  @media (prefers-color-scheme: dark) {
-    .tech {
-      background-color: #414141;
-    }
-  }
-</style>

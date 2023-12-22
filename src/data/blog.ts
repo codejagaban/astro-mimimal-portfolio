@@ -42,7 +42,7 @@ const getBlogPosts = async (): Promise<Blog[]> => {
     }));
 
     return blogPosts;
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error fetching blog posts:", error.message);
     return []; // Return an empty array in case of an error
   }
