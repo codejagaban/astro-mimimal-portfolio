@@ -1,2 +1,3 @@
-# astro-mimimal-portfolio
-A minimal porfolio template in Astro 🚀
+# astro-minimal-portfolio
+
+A minimal portfolio template in Astro 🚀
