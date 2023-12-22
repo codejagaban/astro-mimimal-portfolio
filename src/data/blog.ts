@@ -7,17 +7,18 @@ type RSSBlog = {
         title: string;
         link: string;
         pubDate: string;
-      }[]
-    }
-  }
-}
+      }[];
+    };
+  };
+};
+
 type Blog = {
   title: string;
   link: string;
-  date: string
-}
+  date: string;
+};
 
-const getBlogPosts = async () => {
+const getBlogPosts = async (): Promise<Blog[]> => {
   try {
     // Fetches data from your blog via RSS
     const blogFeed = await fetch("https://blog.jamiin.com/rss.xml");
@@ -32,9 +33,9 @@ const getBlogPosts = async () => {
 
     // parse the XML data
     const parser = new Parser({ explicitArray: false });
-    const parsedData:RSSBlog = await parser.parseStringPromise(blogData);
+    const parsedData: RSSBlog = await parser.parseStringPromise(blogData);
 
-    const blogPosts:Blog[] = parsedData.rss.channel.item.map((item) => ({
+    const blogPosts: Blog[] = parsedData.rss.channel.item.map((item) => ({
       title: item.title,
       link: item.link,
       date: item.pubDate,
