@@ -1,16 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
-import go from '../images/go.svg';
-import linkedIn from '../images/linkedin.svg';
-import x from '../images/x.svg';
-import github from '../images/github.svg';
-import mail from '../images/mail.svg';
 ---
 
 <Layout
-  title="Trust Jamin"
-  description="Trust Jamin is a software engineer who is devoted to making the web easily accessible for everyone. here you'll find some of his previous projects,technical articles, community management endeavors,involvments in open source projects and pieces of information about him."
+  title="John Doe"
+  description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam sunt nesciunt iure architecto illo odit dolor eos, odio nihil necessitatibus quos, maiores suscipit neque reprehenderit aut dignissimos est autem impedit! "
   keywords="code contributions,developer advocate, open source collaboration,technical Writing, community engagement,problem solver,software development,developer-communities, DevRel"
   image="/home.png"
 >
@@ -19,12 +13,11 @@ import mail from '../images/mail.svg';
       <div class="content">
         <h1><span>Hey 👋🏼, I'm</span> John Doe</h1>
         <p class="intro">
-          software engineer deeply interested in bridging connections between
-          developers and state-of-the-art technology. I build <a
+          software engineer Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus, odit rerum in officiis  <a
             href="/projects#Engineering Projects">products</a
           > , and write <a href="/blog">technical articles</a>. In my free time
           , you can find me contributing to <a
-            href="http://github.com/0xJamin"
+            href="http://github.com/"
             target="_blank"
             rel="noopener noreferrer">open-source</a
           > projects or developing <a href="/projects#Engineering Projects"
@@ -33,54 +26,59 @@ import mail from '../images/mail.svg';
         </p>
         <p class="socials">
           <a
-            href="http://github.com/0xJamin"
+            href="http://github.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 22 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15 21.027V18.157C15.0375 17.6801 14.9731 17.2008 14.811 16.7508C14.6489 16.3008 14.3929 15.8904 14.06 15.547C17.2 15.197 20.5 14.007 20.5 8.54698C20.4997 7.1508 19.9627 5.80817 19 4.79698C19.4559 3.57548 19.4236 2.22533 18.91 1.02698C18.91 1.02698 17.73 0.676976 15 2.50698C12.708 1.8858 10.292 1.8858 8 2.50698C5.27 0.676976 4.09 1.02698 4.09 1.02698C3.57638 2.22533 3.54414 3.57548 4 4.79698C3.03013 5.81568 2.49252 7.17044 2.5 8.57698C2.5 13.997 5.8 15.187 8.94 15.577C8.611 15.9169 8.35726 16.3224 8.19531 16.7669C8.03335 17.2114 7.96681 17.685 8 18.157V21.027"
-                class='stroke'
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path>
-              <path
-                d="M8 19.027C5 20 2.5 19.027 1 16.027"
-                class='stroke'
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"></path>
-            </svg>
+          <span class="screen-reader-text">Github Icon</span>
+          <svg role="img" aria-label="GitHub Icon"
+          width="22"
+          height="22"
+          viewBox="0 0 22 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M15 21.027V18.157C15.0375 17.6801 14.9731 17.2008 14.811 16.7508C14.6489 16.3008 14.3929 15.8904 14.06 15.547C17.2 15.197 20.5 14.007 20.5 8.54698C20.4997 7.1508 19.9627 5.80817 19 4.79698C19.4559 3.57548 19.4236 2.22533 18.91 1.02698C18.91 1.02698 17.73 0.676976 15 2.50698C12.708 1.8858 10.292 1.8858 8 2.50698C5.27 0.676976 4.09 1.02698 4.09 1.02698C3.57638 2.22533 3.54414 3.57548 4 4.79698C3.03013 5.81568 2.49252 7.17044 2.5 8.57698C2.5 13.997 5.8 15.187 8.94 15.577C8.611 15.9169 8.35726 16.3224 8.19531 16.7669C8.03335 17.2114 7.96681 17.685 8 18.157V21.027"
+            class='stroke'
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M8 19.027C5 20 2.5 19.027 1 16.027"
+            class='stroke'
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
           </a>
           <a
-            href="http://x.com/0xJamin"
+            href="http://x.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
+          <span class="screen-reader-text">Twitter Icon</span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.808 8.469L18.88 0H17.204L11.062 7.353L6.158 0H0.5L7.918 11.12L0.5 20H2.176L8.662 12.235L13.842 20H19.5L11.808 8.469ZM9.512 11.217L8.76 10.11L2.78 1.3H5.355L10.181 8.41L10.932 9.517L17.205 18.759H14.631L9.511 11.218L9.512 11.217Z" class='fill'/>
             </svg>
           </a>
           <a
-            href="http://linkedin.com/0xjamin"
+            href="http://linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
+          <span class="screen-reader-text">LinkedIn Icon</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7.2 9.59999V17.6M16.8 17.6V13.6C16.8 12.7513 16.4629 11.9374 15.8627 11.3372C15.2626 10.7371 14.4487 10.4 13.6 10.4C12.7513 10.4 11.9374 10.7371 11.3373 11.3372C10.7371 11.9374 10.4 12.7513 10.4 13.6V17.6V9.59999M6.4 7.19999H8M2.4 0.799988H21.6C22.0243 0.799988 22.4313 0.968559 22.7314 1.26862C23.0314 1.56868 23.2 1.97564 23.2 2.39999V21.6C23.2 22.0243 23.0314 22.4313 22.7314 22.7314C22.4313 23.0314 22.0243 23.2 21.6 23.2H2.4C1.97566 23.2 1.56869 23.0314 1.26863 22.7314C0.968574 22.4313 0.800003 22.0243 0.800003 21.6V2.39999C0.800003 1.97564 0.968574 1.56868 1.26863 1.26862C1.56869 0.968559 1.97566 0.799988 2.4 0.799988Z" class='stroke' stroke-width="1.6"/>
             </svg>
           </a>
           <a
-            href="mailto:hellotsjamin@gmail.com"
+            href="mailto:example@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
+          <span class="screen-reader-text">Email Icon</span>
           <svg width="35" height="27" viewBox="0 0 43 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.5713 10.8572L21.1427 16.8572L29.7141 10.8572"class="stroke" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M4 24.5714V7.42857C4 5.53502 5.53502 4 7.42857 4H34.8571C36.7507 4 38.2857 5.53502 38.2857 7.42857V24.5714C38.2857 26.465 36.7507 28 34.8571 28H7.42857C5.53502 28 4 26.465 4 24.5714Z" class='stroke' stroke-width="1.6"/>
@@ -95,9 +93,6 @@ import mail from '../images/mail.svg';
 <style>
   h1 {
     font-size: 3rem;
-  }
-  .goLang {
-    vertical-align: middle;
   }
   .socials {
     margin-top: 50px;
