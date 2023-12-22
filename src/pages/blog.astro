@@ -1,6 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import data from "../data/blog.json";
+import getBlogPosts from "../data/blog.ts";
+const data = await getBlogPosts();
+const dateOptions: Intl.DateTimeFormatOptions = { month: 'short', day: 'numeric', year: 'numeric' };
+
 ---
 
 <Layout
@@ -22,8 +25,7 @@ import data from "../data/blog.json";
               rel="noopener noreferrer"
             >
               <h2>{post.title} </h2>
-              <p>{post.description}</p>
-              <p class="small">{post.date}</p>
+              <p class="small">{new Date(post.date).toLocaleString("en-US",dateOptions)}</p>
             </a>
           ))
         }
@@ -82,3 +84,6 @@ import data from "../data/blog.json";
     font-size: 1.4rem;
   }
 </style>
+<script>
+
+</script>
