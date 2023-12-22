@@ -3,39 +3,22 @@
     "section": "Engineering Projects",
     "projects": [
     {
-      "name": "Finanzchef24",
-      "description": "An insurance as a service platform tailored to protect small-medium businesses and startups",
-      "link": "https://www.finanzchef24.de/",
-      "image": "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.52.16_PM_LrRDBecUlDV.png",
+      "name": "Sample Project",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod aspernatur ducimus nisi, pariatur non officia cumque enim provident natus ad? Quidem, temporibus illum vero consectetur eius quisquam est recusandae.",
+      "link": "/",
       "technologies": ["TypeScript", "Nextjs", "Design System","Nodejs", "Docker", "HTML5", "styled-components", "CSS", "GraphQL"]
     },
     {
-      "name": "Camino Financial",
-      "description": "Camino Financial helps overlooked entrepreneurs / minority business owners fund their dreams by offering loans at very low interest rates",
-      "link": "https://www.caminofinancial.com",
-      "imageUrl": "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2022-05-15_at_1.17.31_AM_Q4gB2wAe9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652574114733",
+      "name": "Sample Project 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod aspernatur ducimus nisi, pariatur non officia cumque enim provident natus ad? Quidem, temporibus illum vero consectetur eius quisquam est recusandae.",
+      "link": "/",
       "technologies": ["TypeScript", "Gatsby", "Contentful CMS", "HTML5", "Styled-components", "Post CSS", "StoryBook", "WordPress", "GraphQL", "JavaScript"]
     },
       {
-        "name": "SpotPet",
-        "description":"Pet insurance tailored to protect Dogs and Cats",
-        "link": "https://spotpetins.com/",
-        "image": "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.51.46_PM_8l4u0P1JU.png",
+        "name": "Sample Project 3",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quod aspernatur ducimus nisi, pariatur non officia cumque enim provident natus ad? Quidem, temporibus illum vero consectetur eius quisquam est recusandae.",
+        "link": "/",
         "technologies":  ["TypeScript", "Gatsby","Prismic CMS", "HTML5", "TailwindCSS", "CSS", "GraphQL", "A11y"]
-      },
-      {
-        "name": "BSCS",
-        "description": "A long-term science education reform initiative of the American Association for the Advancement of Science.",
-        "link": "https://bscs-flora.vercel.app/",
-        "image": "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2021-12-04_at_2.48.44_PM_6qPpFt-K8nq.png",
-        "technologies": ["TypeScript", "Nextjs", "FaunaDB", "HTML5", "styled-components", "CSS"]
-      },
-      {
-        "name": "Alpro Foundation",
-        "description": "Alpro Foundation provides some of the latest must-read scientific publications and reports on plant-based eating",
-        "link": "https://www.alprofoundation.org/",
-        "image": "https://ik.imagekit.io/ibfrpyqbkis/Screenshot_2022-07-15_at_9.16.00_AM_A7o4MRJMu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1657873010480",
-        "technologies": ["TypeScript", "Gatsby", "StoryBlok CMS", "HTML5", "CSS Modules", "SASS" ]
       }
 
     ]
