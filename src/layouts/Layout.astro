@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import "../styles/global.css";
 import Header from "./Header.astro";
 
@@ -31,6 +32,7 @@ const { title, description, keywords, image } = Astro.props;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
+    <ViewTransitions />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
